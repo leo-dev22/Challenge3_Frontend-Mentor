@@ -26,6 +26,42 @@ body{
   display: grid;
   grid-template-columns: 1fr;
 }
+main{
+  background: var(--MediumGrey);
+  border-radius: 20px;
+  margin: 150px auto;
+}
+.star,.rating>div>span{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: var(--LightGrey);
+  
+}
+.rating>div>span{
+  height: 500px;
+  width: 500px;
+  margin: 10px;
+}
+.img-star{
+  background-image:url(./images/icon-star.svg);
+  background-repeat:no-repeat ;
+  background-position: center;
+  height: 30px;
+  width: 30px;
+  z-index: 2;
+  /* border:1px solid white; */
+  border-radius: 50%;
+
+}
+.rating{
+  margin: 50px auto;
+  width: 70%;
+
+}
+.thank{
+  display: none;
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
