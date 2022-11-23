@@ -4,6 +4,7 @@
 --MediumGrey: hsl(216, 12%, 54%);
 --DarkBlue: hsl(213, 19%, 18%);
 --VeryDarkBlue: hsl(216, 12%, 8%);
+--Orange: hsl(25, 97%, 53%);
 
 --fs:15px;
 --mobile-Width:375px;
@@ -29,19 +30,46 @@ body{
 main{
   background: var(--MediumGrey);
   border-radius: 20px;
-  margin: 150px auto;
+  margin: 150px 20px;
 }
-.star,.rating>div>span{
+h1{
+  color: var(--White);
+  margin: 20px auto;
+}
+
+.star{
   height: 30px;
   width: 30px;
   border-radius: 50%;
   background-color: var(--LightGrey);
   
 }
-.rating>div>span{
-  height: 500px;
-  width: 500px;
-  margin: 10px;
+.number {
+  height: 60px;
+  width: 100%;
+  margin-top: 10px;
+  padding-top: 11px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.rating>div>span {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rebeccapurple;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating p{
+  color: rgba(255, 255, 255, 0.641);
+  letter-spacing: .04em;
+  margin-bottom: 20px;
+
 }
 .img-star{
   background-image:url(./images/icon-star.svg);
@@ -52,12 +80,27 @@ main{
   z-index: 2;
   /* border:1px solid white; */
   border-radius: 50%;
+  border:1px solid red;
 
 }
 .rating{
   margin: 50px auto;
   width: 70%;
 
+}
+button{
+  border: 1px solid transparent;
+  border-radius: 50px;
+  background-color: var(--Orange);
+  color: var(--White);
+  width: 100%;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  height: 40px;
+  letter-spacing: .1em;
 }
 .thank{
   display: none;
