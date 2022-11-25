@@ -24,6 +24,7 @@
 body{
   border: 1px red solid;
   background-color: var(--VeryDarkBlue);
+  max-width: 320px;
 }
 main{
   font-family: 'Overpass',sans-serif;
@@ -135,7 +136,38 @@ button{
 .thank .para3{
   color: #ffffffc2;
   margin-bottom: 12px;
+  font-size: 13px;
 }
-
+/* media query */
+@media only screen and (min-width:375px) {
+  body{
+    max-width: 375px;
+    border: 1px solid blue;
+  }
+}
+@media only screen and (min-width:425px) {
+  body{
+    max-width: 425px;
+    border: 1px solid rgb(64, 255, 0);
+  }
+}
+@media only screen and (min-width:768px) {
+  body{
+    max-width: 768px;
+    border: 1px solid rgb(255, 255, 0);
+  }
+}
+@media only screen and (min-width:1024px) {
+  body{
+    max-width: 1024px;
+    border: 1px solid rgb(255, 0, 115);
+  }
+}
+@media only screen and (min-width:1440px) {
+  body{
+    max-width: 1440px;
+    border: 1px solid rgb(230, 0, 255);
+  }
+}
 /* .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); } */
