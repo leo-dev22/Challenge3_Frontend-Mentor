@@ -76,7 +76,7 @@ h1{
 }
 .rating>div>span:hover{
   cursor: pointer;
-  background-color:#ffffff80 ;
+  background-color:var(--Orange) ;
   color: rgba(255, 255, 255, 0.971);
 }
 
