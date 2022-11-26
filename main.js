@@ -21,6 +21,7 @@ submit.addEventListener('click',()=>{
    
    rating.style.display='none';
    thank.style.display='block';
+   rates.style.color='orange';
   }
 }) 
 rates.forEach(element => {
