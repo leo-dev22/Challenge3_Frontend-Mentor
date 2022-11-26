@@ -16,12 +16,9 @@ let rate;
 submit.addEventListener('click',()=>{
  if(rate==null){
   alert('choice any rate from 1 to 5')
- }else{
-
-   
+ }else{ 
    rating.style.display='none';
    thank.style.display='block';
-   rates.style.color='orange';
   }
 }) 
 rates.forEach(element => {
